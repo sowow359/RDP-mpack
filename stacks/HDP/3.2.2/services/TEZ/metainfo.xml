@@ -77,18 +77,18 @@
                   <osFamily>redhat7,amazonlinux2,redhat6,suse11,suse12</osFamily>
                   <packages>
                     <package>
-                      <name>tez_${stack_version}</name>
+                      <name>tez</name>
                     </package>
                   </packages>
                 </osSpecific>
-                <osSpecific>
+                <!-- <osSpecific>
                   <osFamily>debian7,debian9,ubuntu12,ubuntu14,ubuntu16</osFamily>
                   <packages>
                     <package>
                       <name>tez-${stack_version}</name>
                     </package>
                   </packages>
-                </osSpecific>
+                </osSpecific> -->
             </osSpecifics>
 
             <commandScript>
