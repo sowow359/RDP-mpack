@@ -206,6 +206,13 @@ def yarn(name=None, config_dir=None):
        content=InlineTemplate(params.yarn_env_sh_template)
   )
 
+  Directory(params.yarn_bin,
+            owner = params.yarn_user,
+            group = params.user_group,
+            create_parents = True,
+            cd_access='a',
+            )
+
   File(format("{yarn_bin}/container-executor"),
       group=params.yarn_executor_container_group,
       mode=params.container_executor_mode

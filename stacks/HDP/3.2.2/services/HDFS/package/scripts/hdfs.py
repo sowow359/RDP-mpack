@@ -47,6 +47,11 @@ def hdfs(name=None):
             owner='root',
             group='root'
   )
+  Directory(params.hadoop_conf_dir,
+          create_parents = True,
+          owner='root',
+          group='root'
+  )
 
   File(os.path.join(params.limits_conf_dir, 'hdfs.conf'),
        owner='root',
